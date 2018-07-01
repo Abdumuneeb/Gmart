@@ -1,0 +1,137 @@
+<html>
+<head>
+<base href="/">
+
+<script src="assets/js/angular.min.js"> </script>
+<script src="assets/js/angular.js"> </script>
+<script src="assets/js/angular-route.js"> </script>
+<script src="assets/js/angular-animate.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/route.js" ></script>
+<script src="app/controller/main.js"> </script>
+
+
+<title> G_mart</title>
+<link href="/assets/css/G-style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body ng-app="userApp">
+<div class ="Header">
+   <div Class="Offer">
+   <a href="GProduct.html" class="link"> Today's Special Offers! </a>
+   </div >
+    
+	<div class ="search" >
+        <form> 
+		<input id="textbox" type="text" name ="product" value ="Search Products...." onfocus= "this.value ='';" onblur ="if (this.value=='') {this.value='Search Products....';}" >
+		<input id="button" type="image" src="assets/images/search-button.png"  >
+		</form>
+ 	
+    </div>
+	<div class="cart-div cart-border">
+	<form>
+<input  type="submit"  value="View your Cart" class="button view-cart-hover" >
+ 	   <input id="cart-image" type="image" src="assets/images/cart-icon.png" >
+</form>
+    </div>
+	<div id="login-icon">
+
+		<a class="btn-admin" href="/G-admin" > Admin</a>
+	</div>
+    <div class="contact-us-div">  
+	<a id="contact-us-link" href="Gmail.html"> Contact us</a> 
+	</div>
+	</div>
+	<div class="clear-div"> </div>
+    <div id="tabs-div">
+	<img id="G-mart-logo" src="assets/images/G-mart-logo.png">
+	<a href="/G-event" id="Event-tab-margin" class="Tabs-Links" > Events </a>
+	<img class="slash-icon" src="assets/images/slash-tabs.png">
+	<a href="G-About-us.html" class="Tabs-Links" >About Us </a>
+	<img class="slash-icon" src="assets/images/slash-tabs.png">
+	<a class="Tabs-Links" href="G-Best-Deals.html" > Best Deals </a>
+	<img class="slash-icon" src="assets/images/slash-tabs.png">
+	<a class="Tabs-Links" href="G-Services.html" > Services </a>
+	<div  id="email-div">
+	<img class="phone-icon" src="assets/images/call-icon.png"  > 
+	 (+09231) 13697 071
+	<img class="phone-icon"  src="assets/images/mail-icon.png">
+	 G-mart@gmail.com
+	</div>
+	
+	<div class="clear-div"> </div>	
+	</div>	
+	<div class="position-container-div">
+		<div class="position-items-div">
+		<p><a class="home-link" href="/home">&nbsp; &nbsp; &nbsp; &nbsp; Home  </p>
+		 
+		</div>
+		</div>
+<div id="first-container">
+
+<div id="list-div">
+<ul class="ul-list" type="none">
+<li class="list-item" id="first-list-item"> <a class ="list-a" href="/G-branded">Branded Food</a> </li>
+<li class="list-item"> <a class="list-a" href="/G-spices"> Spices </a> </li>
+<li class="list-item"> <a> Veggies & Fruits</a> <select><option value="app/views/pages/G-fruits.html"> fruits</option>
+	<option value="app/views/pages/G-vegtables.html"> vegetables</option>
+</select> </li>
+<li class="list-item"> <a class="list-a" href="/G-kitchen"> Kitchen</a> </li>
+<li class="list-item"> <a> Beverages</a> <img class="hover-drop-down" src="assets/images/capture.png"> </li>
+<li class="list-item"> <a class="list-a" href="/G-petfood"> Pet Food</a>  </li>
+<li class="list-item"> <a> Frozen Food</a> <img class="hover-drop-down" src="assets/images/capture.png"> </li>
+<li class="list-item"  id="last-list-item"> <a class="list-a" href="/bread-&-bakery" > Bread & Bakery</a> </li>
+
+</ul>
+
+
+<div class="clear-div"></div>
+
+</div>
+
+	</div>
+	
+
+<div class="cear-div"></div>
+<div ng-view></div>
+
+<div id="footer-div">
+<div class="service-div">
+<h1> Service Area <h1>
+<p style="font-size:12px;"> Operates in Kohat City </p>
+</div>
+
+<div class="follow-us-div">
+  <h1> Follow US <h1>
+  <img id="facebook-hover" class="logo-sizing" src="assets/images/facebook-logo.png" > 
+  <img id="twitter-hover" class="logo-sizing " src="assets/images/Twitter-icon.png">
+  <img id="gmail-hover" class="logo-sizing"  src="assets/images/gmail-logo.png">
+</div>
+<div class="follow-us-div">
+<h1> Contact Us </h1>
+<img class="cnt-phone-icon" src="assets/images/call-icon.png"  > 
+	  (+09231) 13697 071
+	 <br>
+	 
+<img class="cnt-phone-icon" src="assets/images/call-icon.png"  > 
+	   (+09231) 00904020
+	 <br>
+	 <br>
+<img class="cnt-phone-icon"  src="assets/images/mail-icon.png">
+	 shahwaseem735@gmail.com
+	 <br>
+<img class="cnt-phone-icon"  src="assets/images/mail-icon.png">
+	 muneebafridi07@gmail.com
+</div>
+<div class="clear-div"> </div>
+<div class="paragraph-footer-div">
+<p id="paragraph">We are local mobile Ecommerce platform that is transforming the shopping experience for people like you, by connecting to the source of groceries.we aim to bring you<br>
+the best and most healthy items at the most economical price.to do so, we leave no brick inturned.User's can order through the app and get everthing delivered to their<br>
+doorstep, quickly. We offer a wide assortment of groceries,fruits vegetables and kitchen products.</p>
+</div>
+<div class="copyright-div">
+<p id="copy-para"> Copyright © 2018.All Rights Reserved</p>
+</div>
+</div>
+</body>
+</html>

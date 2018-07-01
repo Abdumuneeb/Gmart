@@ -1,0 +1,21 @@
+{
+  "name": "projectgmart",
+  "version": "1.0.0",
+  "description": "the project G-MART",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "M.waseem",
+  "license": "ISC"
+}
