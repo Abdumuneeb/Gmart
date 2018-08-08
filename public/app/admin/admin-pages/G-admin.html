@@ -1,17 +1,34 @@
 
- <div id="admin-form-div">
+ <!-- <div id="admin-form-div"> -->
+    <div class="container-fluid m-0 p-0 row" style="height: auto;  float: left; background-color: white ">
 
-    <form>
-        <label>Item Name: </label> &nbsp; &nbsp;
-        <input  type=text value=""> <br> <br>
-        <label>Price: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input  type=text value=""> <br> <br>
-        <label>Quantity: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        <input  type=text value="">   <br> <br>
-        <label>Weight: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-        <input  type=text value=""><br><br>
-        <input  type=button value="Insert"> &nbsp; &nbsp;
-        <input  type=button value="Cancel"> 
-                  
-    </form>
-     </div>
+        <!-- <div class="veg-img-div m-o p-o">   -->
+        
+        <form ng-submit="register.regUser(regData);" style="margin-left: 20px;">
+        
+            <h1 style="color: black">Item Registration </h1>
+            <label> product Type</label>
+            <select  class="form-control" name="ProductType" ng-model="register.regData.ProductType">
+                    <option value=""> enter the type</option>
+                   <option value="bakery">Bakery</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="brandedFood">Branded Foods</option>
+                    <option value="spice">Spice</option>
+                    <option value="vegetables and fruit">Vegetable and Fruit</option>
+                    <option value="fruit">Fruit</option>
+                    <option value="beverages">Beverages</option> 
+                    <option value="frozanFood">Frozan Food</option>
+                </select>
+            <label>Item Name: </label>
+            <input class="form-control" type=text name="item-name" placeholder="please enter item-name" ng-model="register.regData.itemName">
+            <label>Price: </label>
+            <input class="form-control" type=text name="price" placeholder="please enter price" ng-model="register.regData.price">
+            <label>Quantity: </label>
+            <input class="form-control" type=text name="Quantity" placeholder="please enter Quantity" ng-model="register.regData.quantity">
+            <label>Weight: </label>
+            <input class="form-control" type=text name="Weight" placeholder="please enter Weight" ng-model="register.regData.weight">
+            <br>
+            <button class="btn btn-primary" type="submit">Register</button>
+            <button class="btn btn-primary" type="submit">Cancle</button>
+        </form>
+        </div>

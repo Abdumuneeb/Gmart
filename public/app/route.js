@@ -43,8 +43,20 @@ $routeProvider
     .when('/G-petfood', {
       templateUrl: 'app/views/pages/G-pet-food.html'
     })
+    .when('/G-vegetables', {
+      templateUrl: 'app/views/pages/G-vegetables.html'
+    })
+    .when('/G-fruits', {
+      templateUrl: 'app/views/pages/G-fruits.html'
+    })
+    .when('/G-frozanFood', {
+      templateUrl: 'app/views/pages/G-frozan-food.html'
+    })
     .when('/G-admin', {
-      templateUrl: 'app/admin/admin-pages/G-admin.html'
+      templateUrl: 'app/admin/admin-pages/G-admin.html',
+      controller: 'regCtrl',
+      controllerAs : "register" 
+      
     })
     .when('/Gmail', {
       templateUrl: 'app/views/pages/Gmail.html'
