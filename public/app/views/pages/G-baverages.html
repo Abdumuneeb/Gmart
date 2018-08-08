@@ -2,15 +2,15 @@
     <div class="container-fluid m-0 p-0 row" style="height: 378px;  float: left;background-color: brown">
   
     <!-- <div class="veg-img-div m-o p-o">   -->
-    <img class ="img-veg " src="assets/images/frozanfood.jpg" >
+    <img class ="img-veg " src="assets/images/baverages.jpg" >
       </div>
      
     
-  <div  ng-controller="frozanDataCtrl"   >
+  <div  ng-controller="beveragesDataCtrl"   >
   <div style="float: left;" >
-    <div class="col-sm-3 products-div"   ng-repeat="frozan in frozanData" style="float: left; margin-top: 50px; " >
+    <div class="col-sm-3 products-div"   ng-repeat="beverages in beveragesData" style="float: left; margin-top: 50px; " >
        <img class="product-pic-div" ng-src="/assets/images/kitchen/{{ images[$index] }}" alt="spices product" style="width: 200px; height: 120px; ">
-       <h6 style="text-align: center">{{ frozan.ItemName }} RS {{ frozan.Price }}</h6>
+       <h6 style="text-align: center">{{ beverages.ItemName }} RS {{ beverages.Price }}</h6>
         <div ng-controller="quantityctrl">
           <form ng-repeat=" quanitity in quantities" style="margin-left: 25px;">
         <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="decrementLikes(quanitity)">

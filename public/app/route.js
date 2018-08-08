@@ -17,6 +17,10 @@ $routeProvider
     .when('/G-branded', {
       templateUrl: 'app/views/pages/G-branded.html'
     })
+      .when('/G-baverages', {
+      templateUrl: 'app/views/pages/G-baverages.html'
+    })
+
 
     .when('/G-about-us', {
       templateUrl: 'app/views/pages/G-about-us.html'

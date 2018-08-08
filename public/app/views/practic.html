@@ -9,17 +9,24 @@
 <script src="app/app.js"></script>
 <script src="app/route.js" ></script>
 <script src="app/admin/controller/userCtrl.js" >   </script>
+<script src="/app/admin/controller/bakeryCtrl.js"></script>
+<script src="/app/admin/controller/beveragesCtrl.js"></script>
+<script src="/app/admin/controller/brandedFoodCtrl.js"></script>
+<script src="/app/admin/controller/frozanFoodCtrl.js"></script>
+<script src="/app/admin/controller/fruitCtrl.js"></script>
 <script src="/app/admin/controller/kitchenCtrl.js"></script>
+<script src="/app/admin/controller/spicesCtrl.js"></script>
+<script src="/app/admin/controller/vegetablesCtrl.js"></script>
 <title> G_mart</title>
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"	>
 <link href="/assets/css/G-style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<body ng-app="userApp" style="font-size: 1.2rem">
-		<div class="container-fluid m-0 p-0 ">
+<body ng-app="userApp">
+		<div class="container-fluid m-0 p-0 " style="width: 100%; background-color: blue">
 			
 			  
 <!-- navigation bar  -->
-	<nav class="navbar navbar-light row m-0 p-0 " style="background-color:#212121 ;height:52px;" >
+	<nav class="navbar navbar-light row m-0 p-0 " style="background-color:#212121 ;height:37px; width: 100%;" >
 			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			
 					<div class="col-sm-2 m-0 p-0" style="background-color: rgb(255, 255, 255); height: px;" >
@@ -55,7 +62,7 @@
 		</div>
  <!-- home bar  -->
 		<nav class="navbar navbar-light " style="background-color:#f47b00" >
-				<a class="navbar-brand" href="#" style="height: 35px; width: 100%; margin-left: 60px;">Home</a>
+				<a class="navbar-brand" href="#" style="height: 27px; width: 100%; margin-left: 60px;">Home</a>
 			</nav>
 
 <!-- main div for picture product list and items -->
@@ -73,7 +80,6 @@
 		</select> </li> -->
 		<li class="list-item"> <a class="list-a" href="/G-kitchen"> Kitchen</a> </li>
 		<li class="list-item"> <a class="list-a" href="/G-baverages"> Baverages</a> </li>
-		<li class="list-item"> <a class="list-a" href="/G-petfood"> Pet Food</a>  </li>
 		<li class="list-item"> <a class="list-a" href="/G-frozanFood"> Frozan Food</a>  </li>
 		<li class="list-item"  id="last-list-item"> <a class="list-a" href="/bread-&-bakery" > Bread & Bakery</a> </li>
 		<li class="list-item"  id="last-list-item"> <a class="list-a" href="/G-admin" > admin</a> </li>

@@ -8,6 +8,4 @@ angular.module('kitchenControllers', [])
     }).catch((err) => {
         console.log(err);
     });
-
-
 }]);
