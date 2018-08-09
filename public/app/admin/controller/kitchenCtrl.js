@@ -4,7 +4,7 @@ angular.module('kitchenControllers', [])
     $scope.kitchenData = {};
     $http.get('/inventory-api/getKitchenData').then((returnData) => {
         $scope.kitchenData = returnData.data;
-        $scope.images = ['image1.png', 'image2.jpg','image3.jpg','black-forest.jpg'];
+        $scope.images = ['dettol.jpg', 'handwash.jpg','Kitchen-gel.jpg','lifeboy.jpg','rose.jpg','scotch.jpg','steel.png','vim.jpg'];
     }).catch((err) => {
         console.log(err);
     });

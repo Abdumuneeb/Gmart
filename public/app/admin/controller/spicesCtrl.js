@@ -4,7 +4,7 @@ angular.module('spicesControllers', [])
     $scope.spicesData = {};
     $http.get('/inventory-api/getSpicesData').then((returnData) => {
         $scope.spicesData = returnData.data;
-        $scope.images = ['image1.png', 'image2.jpg','image3.jpg','black-forest.jpg'];
+        $scope.images = ['almond.jpg', 'anise.jpg','annotto.jpg','arrowroot.jpg','black.jpg','bonito.jpg','blackpepper.jpg','cuman.jpg','curing.jpg','dill.jpg','koshar.jpg','lemongrass.jpg'];
     }).catch((err) => {
         console.log(err);
     });

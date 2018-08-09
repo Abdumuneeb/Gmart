@@ -4,7 +4,7 @@ angular.module('bakeryControllers', [])
     $scope.bakeryData = {};
     $http.get('/inventory-api/getBakeryData').then((returnData) => {
         $scope.bakeryData = returnData.data;
-        $scope.images = ['image1.png', 'image2.jpg','image3.jpg','black-forest.jpg'];
+        $scope.images = ['black-forest.jpg', 'bread.png','choclate-cup-cakes.jpg','cookies.jpg','fruit-cake.jpg','gulab-jamun.jpg','ice-cream-cake.jpg','khanpuri-pairay.jpg','Khoya-Barfi.jpg','pinapple-cake.jpg','rasgullay.jpg','biscuits.jpg'];
     }).catch((err) => {
         console.log(err);
     });

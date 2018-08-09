@@ -9,7 +9,7 @@
 <div  ng-controller="bakeryDataCtrl"   >
 <div style="float: left;" >
   <div class="col-sm-3 products-div"   ng-repeat="bakery in bakeryData" style="float: left; margin-top: 50px; " >
-     <img class="product-pic-div" ng-src="/assets/images/kitchen/{{ images[$index] }}" alt="spices product" style="width: 200px; height: 120px; ">
+     <img class="product-pic-div" ng-src="/assets/images/bakkery/{{ images[$index] }}" alt="spices product" style="width: 200px; height: 120px; ">
      <h6 style="text-align: center">{{ bakery.ItemName }} RS {{ bakery.Price }}</h6>
       <div ng-controller="quantityctrl">
         <form ng-repeat=" quanitity in quantities" style="margin-left: 25px;">

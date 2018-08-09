@@ -4,7 +4,7 @@ angular.module('beveragesControllers', [])
     $scope.beveragesData = {};
     $http.get('/inventory-api/getBeveragesData').then((returnData) => {
         $scope.beveragesData = returnData.data;
-        $scope.images = ['image1.png', 'image2.jpg','image3.jpg','black-forest.jpg'];
+        $scope.images = ['seven.jpg', 'aqua.jpg','bourn.jpg','diet.jpg','due.jpg','pep.jpg','sprite.jpg','oval.jpg','lemon.jpg','tang.jpg','slice.jpg','sting.jpg'];
     }).catch((err) => {
         console.log(err);
     });

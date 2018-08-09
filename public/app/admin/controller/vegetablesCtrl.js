@@ -4,7 +4,7 @@ angular.module('vegetablesControllers', [])
     $scope.vegetablesData = {};
     $http.get('/inventory-api/getVegetablesData').then((returnData) => {
         $scope.vegetablesData = returnData.data;
-        $scope.images = ['image1.png', 'image2.jpg','image3.jpg','black-forest.jpg'];
+        $scope.images = ['potatoes.jpg', 'tomatoes.jpeg','cucumber.png','carrots.jpg','ginger.jpg','garlic.jpg','marrow.jpg','brinjal.jpg','lady.png','pumpkin.jpg','turnip.jpg','lauki.jpg','ghobi.jpg','shimla.jpg','lemon.jpg'];
     }).catch((err) => {
         console.log(err);
     });
