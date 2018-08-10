@@ -17,6 +17,19 @@ body{
 	text-align:center;
 	height: 52px;
 	}
+	.cart {
+		font-size: 1.1em;
+		/* padding-top: 7px; */
+		float :left;
+		width:70px;
+		border-radius: 30px;
+		text-align:center;
+		
+		}
+		.cart:hover{
+			background-color: #6bc70a;
+			/* cursor:pointer; */
+		}
 .offer:hover{
 	background-color: #6bc70a;
 	}
@@ -60,7 +73,7 @@ background-color:#f47b00;
 	padding-top:3px;
 	float:left;
 	}
-.cart-div{
+/* .cart-div{
 	    float:left;
 		margin-left:100px;
 		height:25px;
@@ -68,10 +81,10 @@ background-color:#f47b00;
 		padding-top:8px;
 		width:140px;
 		text-align:center;
-        }
-.cart-div:hover{
+        } */
+/* .cart-div:hover{
 	cursor:pointer;
-}
+} */
 .cart-border:hover{
 	cursor:pointer;
 }
@@ -392,3 +405,4 @@ border-radius:15px;
 background:#6bc70a;
 color:white;
 }
+

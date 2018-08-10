@@ -9,15 +9,15 @@
 <div  ng-controller="bakeryDataCtrl"   >
 <div style="float: left;" >
   <div class="col-sm-3 products-div"   ng-repeat="bakery in bakeryData" style="float: left; margin-top: 50px; " >
-     <img class="product-pic-div" ng-src="/assets/images/bakkery/{{ images[$index] }}" alt="spices product" style="width: 200px; height: 120px; ">
+     <img class="product-pic-div" ng-src="/assets/images/bakkery/{{ images[$index] }}" alt="bakery product" style="width: 200px; height: 120px; ">
      <h6 style="text-align: center">{{ bakery.ItemName }} RS {{ bakery.Price }}</h6>
       <div ng-controller="quantityctrl">
         <form ng-repeat=" quanitity in quantities" style="margin-left: 25px;">
-      <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="decrementLikes(quanitity)">
+      <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="itemSubToCart(bakery.ItemName) ">
        {{quanitity.box}} 
-         <input class="quantity-btn" type="button" value="+" ng-click="incrementLikes(quanitity  )">
+         <input class="quantity-btn" type="button" value="+" ng-click="itemAddToCart(bakery.ItemName) ">
     </div>
-    <input class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="itemAddToCart(iceCreamCakeId, quanitity.box)">
+    <input id="btn" class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="itemAddToCart(bakery.ItemName) "  >
     </form>
     </div>
     

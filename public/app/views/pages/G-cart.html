@@ -1,0 +1,29 @@
+<div class="container-fluid m-0 p-0 row" style="height: 378px;  float: left;" >
+
+   
+    <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Sub Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in cartItems">
+            <th scope="row">{{$index + 1}}</th>
+            <td>{{item.productName}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{bakeryData[$index].Price}}</td>
+            <td>{{item.quantity *bakeryData[$index].Price}} </td>
+          </tr>
+         </tbody>
+      </table>
+      <div style="margin-left: 600px;">
+      <button type="button" class="btn btn-primary btn-sm" style="height: 30px;">Submit</button>
+      <button type="button" class="btn btn-secondary btn-sm" style="height: 30px;" >Cancle</button>
+    </div>
+    </div>
+     

@@ -8,4 +8,5 @@ angular.module('brandedFoodControllers', [])
     }).catch((err) => {
         console.log(err);
     });
+
 }]);

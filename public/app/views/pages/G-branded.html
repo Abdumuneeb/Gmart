@@ -10,19 +10,21 @@
 <div style="float: left;" >
   <div class="col-sm-3 products-div "   ng-repeat="branded in brandedData" style="float: left; margin-top: 50px; " >
      <img class="product-pic-div " src="/assets/images/branded/{{ images[$index] }}" alt="kitchen product" style="width: 200px; height: 120px; ">
-     <h6 style="text-align: center">{{ branded.ItemName }} RS {{ branded.Price }}</h6>
+     <h6 style="text-align: center">{{ branded.ItemName }} RS {{ branded.Price }}   </h6>
       <div ng-controller="quantityctrl">
         <form ng-repeat=" quanitity in quantities" style="margin-left: 25px;">
       <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="decrementLikes(quanitity)">
        {{quanitity.box}} 
+       
          <input class="quantity-btn" type="button" value="+" ng-click="incrementLikes(quanitity  )">
     </div>
-    <input class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="itemAddToCart(iceCreamCakeId, quanitity.box)">
+    <input class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="itemAddToCart(branded.ItemName, quanitity.box)">
     </form>
     </div>
     
     </div>
     </div>
+  
     </div>
 
 

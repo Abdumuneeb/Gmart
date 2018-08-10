@@ -17,11 +17,12 @@
 <script src="/app/admin/controller/kitchenCtrl.js"></script>
 <script src="/app/admin/controller/spicesCtrl.js"></script>
 <script src="/app/admin/controller/vegetablesCtrl.js"></script>
+<script src="/app/admin/controller/cartCtrl.js"></script>
 <title> G_mart</title>
 <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"	>
 <link href="/assets/css/G-style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
-<body ng-app="userApp">
+<body ng-app="userApp" ng-controller="cartCtrl">
 		<div class="container-fluid m-0 p-0 " style="width: 100%; background-color: blue">
 			
 			  
@@ -35,6 +36,18 @@
 							<a href="GProduct.html" class="link"> Today's Special Offers! </a>
 							</div >
 							
+							</div>
+							<div class="col-sm-2 m-0 p-0" style=" height: px;" >
+
+								<div Class="cart center">
+									<a href="G-cart" class="link"> Cart </a> 
+									</div >
+									<img src="assets/images/cart-icon.png" style="height: 24px; width: 25px; 
+									margin-top: 1px; margin-left: 3px; ">
+									
+									</div>
+									
+
 		</nav>
 	  <!-- gmart logo div -->
 	<div class="container-fluid m-0 p-0 row" style="height: 167px; widows: 100%; float: left;background-color: brown">
@@ -129,15 +142,17 @@
 						
 		</div>
 	<!-- paragraph footer div	 -->
-	<div class="col-sm-12 m-0 p-0 " style="background-color: #212121;   width: 100%;">
+	<div  class="col-sm-12 m-0 p-0 " style="background-color: #212121;   width: 100%;">
 			<div class="paragraph-footer-div">
                     <p id="paragraph">We are local mobile Ecommerce platform that is transforming the shopping experience for people like you, by connecting to the source of groceries.we aim to bring you<br>
                     the best and most healthy items at the most economical price.to do so, we leave no brick inturned.User's can order through the app and get everthing delivered to their<br>
                     doorstep, quickly. We offer a wide assortment of groceries,fruits vegetables and kitchen products.</p>
-                    </div>
+									
+				</div>
                     <div class="copyright-div">
                     <p id="copy-para"> Copyright © 2018.All Rights Reserved</p>
-                    </div> 
+					</div> 
+					
 		</div>
 	</div>
 
@@ -146,5 +161,6 @@
 <script src="assets/js/jquery-3.3.1.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 </div>
+
 </body>
 </html>

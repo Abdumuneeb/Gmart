@@ -1,5 +1,5 @@
 angular.module('userControllers',[])
-.controller('regCtrl',function($http){
+.controller('regCtrl',function($http,$scope,$window){
 this.regUser= function(regData){
     console.log('form submitted ');
     console.log(this.regData);
@@ -9,52 +9,91 @@ this.regUser= function(regData){
         console.log(err);
     });
 };
+    // $scope.itemAddToCart = function (itemId, itemQuantity) {
+
+    //     var item = [];
+    //     var itemQunty = [];
+    //     var itemToCart = {
+    //         itemId: itemId,
+    //         itemQuantity: itemQuantity
+    //     };
+
+
+    //     if(!$window.localStorage.getItem('items')) {  
+    //         console.log('khali');  
+    //         $window.localStorage.setItem('items', itemToCart.itemId);
+    //         $window.localStorage.setItem('quantity', itemToCart.itemQuantity);
+    //     } else {
+    //         item.push($window.localStorage.getItem('items', item));
+    //         itemQunty.push($window.localStorage.getItem('quantity', itemQunty));
+    //         item.forEach(function (itm, index) {
+    //             if (itm == itemToCart.itemId) {
+    //                 console.log('duplicate');
+    //                 itemQunty[index] = itemToCart.itemQuantity;
+    //                 $window.localStorage.setItem('quantity', itemQunty);
+    //             }
+    //             else {
+    //                 console.log('new item');
+
+    //                 item.push(itemToCart.itemId);
+    //                 itemQunty.push(itemToCart.itemQuantity);
+
+    //                 $window.localStorage.setItem('items', item);
+    //                 $window.localStorage.setItem('quantity', itemQunty);
+    //             }
+    
+    //         });
+    //     }
+
+    //     $scope.cartItems = ($window.localStorage.getItem('items', item));
+    //     $scope.cartQuantity = ($window.localStorage.getItem('quantity', itemQunty));
+
+    // }
+
 })
 
-.controller('quantityctrl',function($scope, $window){
+.controller('quantityctrl',function($scope){
 var quantities=[ 
     {box:0},
-
+    
  ];
-
- $scope.breadId = '5b52f19e3ec8f40c14373caf';
- $scope.cookiesId = '5b52f19e3ec8f40c1437311111';
- $scope.cupCakesId = '5b52f19e3ec8f40c14373caf';
- $scope.biscuitsId = '5b52f19e3ec8f40c14373caf';
- $scope.gulabJamunId = '5b52f19e3ec8f40c14373caf';
- $scope.rasgullayId = '5b52f19e3ec8f40c14373caf';
- $scope.khanPuriPairayId = '5b52f19e3ec8f40c14373caf';
- $scope.khoyaBarfiId = '5b52f19e3ec8f40c14373caf';
- $scope.pinAppleCakeId = '5b52f19e3ec8f40c14373caf';
- $scope.blackForestId = '5b52f19e3ec8f40c14373caf';
- $scope.fruitCakeId = '5b52f19e3ec8f40c14373caf';
- $scope.iceCreamCakeId = '5b52f19e3ec8f40c14373caf';
- 
  $scope.quantities=quantities;
  $scope.incrementLikes=function(quantity){
      quantity.box++;
+     
  }
 
  
  $scope.decrementLikes=function(quantity){
      quantity.box--;
+     
  }
- $scope.itemAddToCart=function(itemId, itemQuantity){
+ 
 
-    var itemToCart = {
-        itemId: itemId,
-        itemQuantity: itemQuantity
-    };
+//  $scope.itemAddToCart=function(itemId, itemQuantity){
 
-console.log(itemToCart);
+//     var item = [];
+//     var itemQunty = [];
+//     var itemToCart = {
+//         itemId: itemId,
+//         itemQuantity: itemQuantity
+//     };
+//     item.push($window.localStorage.getItem('items'));
+//     item.push(itemToCart.itemId);
 
-$window.localStorage.setItem('itemDetails', itemToCart);
+//     itemQunty.push($window.localStorage.getItem('quantity'));
+//     itemQunty.push(itemToCart.itemQuantity);
 
 
-console.log($window.localStorage.getItem('itemDetails.itemId'));
+//     $window.localStorage.setItem('items', item);
+// $window.localStorage.setItem('quantity', itemQunty);
 
+// console.log($window.localStorage.getItem('items',item));
+// console.log($window.localStorage.getItem('quantity',itemQunty));
 
- }
+//     $scope.cartItems=($window.localStorage.getItem('items',item));
+
+// }
 });
 
 

@@ -1,3 +1,3 @@
 angular.module('userApp',['appRoutes','userControllers', 'kitchenControllers'
 ,'spicesControllers','brandedFoodControllers','vegetablesControllers','fruitControllers'
-,'frozanControllers','beveragesControllers','bakeryControllers']);
+,'frozanControllers','beveragesControllers','bakeryControllers','cartControllers']);

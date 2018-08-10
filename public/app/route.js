@@ -20,6 +20,10 @@ $routeProvider
       .when('/G-baverages', {
       templateUrl: 'app/views/pages/G-baverages.html'
     })
+    .when('/G-cart', {
+      templateUrl: 'app/views/pages/G-cart.html'
+    })
+
 
 
     .when('/G-about-us', {
