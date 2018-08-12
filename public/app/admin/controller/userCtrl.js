@@ -1,6 +1,7 @@
 angular.module('userControllers',[])
-.controller('regCtrl',function($http,$scope,$window){
+.controller('regCtrl',function($http,$scope,$window,$location,$timeout){
 this.regUser= function(regData){
+   
     console.log('form submitted ');
     console.log(this.regData);
     $http.post('/inventory-api/inventory',this.regData).then((result) => {

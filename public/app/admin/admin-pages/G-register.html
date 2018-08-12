@@ -1,0 +1,25 @@
+<div class="container-fluid m-0 p-0 row" style="height: auto;  float: left; background-color: white ">
+
+    <form ng-submit="User.regUser(UserData);" style="margin-left: 20px;">
+        <br>
+        <br> 
+        <br>
+        <strong><labe> User Registration</labe></strong> <br><br>
+        <label>Email: </label> &nbsp; &nbsp; <br> 
+        <input  type="text" value="" ng-model="User.UserData.Email" placeholder="Enter  Email"> <br> <br>
+        <label>User Name: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>
+        <input  type="text" value="" ng-model="User.UserData.UserName" placeholder="Enter User Name"> <br> <br>
+        <label>Password: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <br> 
+        <input  type="password" value="" ng-model="User.UserData.Password" placeholder="Enter Password">   <br> <br>
+        <input class="btn btn-primary" type="submit" value="Register"> &nbsp; &nbsp;
+      <!--  <input  type=button value="Add more"> !-->
+
+      <br> <br> 
+      <div class="success-message" ng-show="User.successMsg"> {{User.successMsg}} </div>
+      <br>
+      <br>
+      <div class="error-message" ng-show="User.errorMsg"> {{User.errorMsg}} </div>         
+    </form>
+   
+    
+    </div>

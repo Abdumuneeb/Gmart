@@ -60,6 +60,25 @@ $routeProvider
     .when('/G-frozanFood', {
       templateUrl: 'app/views/pages/G-frozan-food.html'
     })
+    .when('/G-window',{
+
+      templateUrl:'app/admin/admin-pages/G-window.html'
+    })
+    
+    .when('/G-signup', {
+        templateUrl: 'app/admin/admin-pages/G-register.html',
+        controller:'UserCtrl',
+      controllerAs:'User' 
+        
+      })
+.when('/G-Login',{
+  templateUrl: 'app/admin/admin-pages/G-login.html',
+  controller:'mainCtrl',
+controllerAs:'main'
+
+})
+
+    //real route
     .when('/G-admin', {
       templateUrl: 'app/admin/admin-pages/G-admin.html',
       controller: 'regCtrl',
