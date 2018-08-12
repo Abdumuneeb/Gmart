@@ -1,12 +1,13 @@
 angular.module('cartControllers',[])
-.controller('cartCtrl',function($http,$scope,$window){
+.controller('cartCtrl',function($http,$scope,$window, $rootScope){
 
-  $scope.itemAddToCart=function(itemId){
+  $scope.itemAddToCart=function(itemId,price){
     var itemToCart = {
         itemId: itemId,
+        price:price,
     };
     if(!$window.localStorage.getItem('items')) {  
-                var addToStorage = angular.toJson([{productName: itemToCart.itemId, quantity: 1}]);
+                var addToStorage = angular.toJson([{productName: itemToCart.itemId,price:itemToCart.price, quantity: 1}]);
                 $window.localStorage.setItem('items', addToStorage);
             } else {
                 var storedItems = [], itemFoundCheck = false;
@@ -22,13 +23,13 @@ angular.module('cartControllers',[])
                         });
 
                         if (!itemFoundCheck) {
-                            storedItems.push({productName: itemToCart.itemId, quantity: 1});
+                            storedItems.push({productName: itemToCart.itemId,price:itemToCart.price, quantity: 1});
                         }
 
                         // console.log(item)
                         $window.localStorage.setItem('items', angular.toJson(storedItems));
                     }
-    $scope.cartItems=(angular.fromJson($window.localStorage.getItem('items')));
+         $rootScope.cartItems=(angular.fromJson($window.localStorage.getItem('items')));
 
     
 }
@@ -60,7 +61,7 @@ $scope.itemSubToCart=function(itemId){
                         // console.log(item)
                         $window.localStorage.setItem('items', angular.toJson(storedItems));
                     }
-    $scope.cartItems=(angular.fromJson($window.localStorage.getItem('items')));
+         $rootScope.cartItems=(angular.fromJson($window.localStorage.getItem('items')));
     
 }
 });

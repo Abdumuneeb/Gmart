@@ -13,11 +13,11 @@
      <h6 style="text-align: center">{{ vegetables.ItemName }} RS {{ vegetables.Price }}</h6>
       <div ng-controller="quantityctrl">
         <form ng-repeat=" quanitity in quantities" style="margin-left: 25px;">
-      <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="decrementLikes(quanitity)">
+      <div style="margin-left: 12px;"> <input  class="quantity-btn" type="button" value="-" ng-click="decrementLikes(quanitity) ;itemSubToCart(vegetables.ItemName)">
        {{quanitity.box}} 
-         <input class="quantity-btn" type="button" value="+" ng-click="incrementLikes(quanitity  )">
+         <input class="quantity-btn" type="button" value="+" ng-click="incrementLikes(quanitity) ;itemAddToCart(vegetables.ItemName,vegetables.Price)">
     </div>
-    <input class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="itemAddToCart(iceCreamCakeId, quanitity.box)">
+    <input class="btn-styling" style="margin-left: -6px;" type="submit" value="Add to Cart" ng-click="incrementLikes(quanitity) ;itemAddToCart(vegetables.ItemName,vegetables.Price)">
     </form>
     </div>
     

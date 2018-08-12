@@ -9,47 +9,6 @@ this.regUser= function(regData){
         console.log(err);
     });
 };
-    // $scope.itemAddToCart = function (itemId, itemQuantity) {
-
-    //     var item = [];
-    //     var itemQunty = [];
-    //     var itemToCart = {
-    //         itemId: itemId,
-    //         itemQuantity: itemQuantity
-    //     };
-
-
-    //     if(!$window.localStorage.getItem('items')) {  
-    //         console.log('khali');  
-    //         $window.localStorage.setItem('items', itemToCart.itemId);
-    //         $window.localStorage.setItem('quantity', itemToCart.itemQuantity);
-    //     } else {
-    //         item.push($window.localStorage.getItem('items', item));
-    //         itemQunty.push($window.localStorage.getItem('quantity', itemQunty));
-    //         item.forEach(function (itm, index) {
-    //             if (itm == itemToCart.itemId) {
-    //                 console.log('duplicate');
-    //                 itemQunty[index] = itemToCart.itemQuantity;
-    //                 $window.localStorage.setItem('quantity', itemQunty);
-    //             }
-    //             else {
-    //                 console.log('new item');
-
-    //                 item.push(itemToCart.itemId);
-    //                 itemQunty.push(itemToCart.itemQuantity);
-
-    //                 $window.localStorage.setItem('items', item);
-    //                 $window.localStorage.setItem('quantity', itemQunty);
-    //             }
-    
-    //         });
-    //     }
-
-    //     $scope.cartItems = ($window.localStorage.getItem('items', item));
-    //     $scope.cartQuantity = ($window.localStorage.getItem('quantity', itemQunty));
-
-    // }
-
 })
 
 .controller('quantityctrl',function($scope){
