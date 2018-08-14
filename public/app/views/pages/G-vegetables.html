@@ -7,7 +7,7 @@
    
   
 <div  ng-controller="vegetablesDataCtrl"   >
-<div style="float: left;" >
+<div style="float: left; margin-bottom: 50px;" >
   <div class="col-sm-3 products-div "   ng-repeat="vegetables in vegetablesData" style="float: left; margin-top: 50px; " >
      <img class="product-pic-div " src="/assets/images/vegitables/{{ images[$index] }}" alt="kitchen product" style="width: 200px; height: 120px; ">
      <h6 style="text-align: center">{{ vegetables.ItemName }} RS {{ vegetables.Price }}</h6>
