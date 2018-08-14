@@ -1,3 +1,3 @@
-angular.module('userApp',['appRoutes','userControllers', 'kitchenControllers'
+angular.module('userApp',['appRoutes','userControllers','UserController' ,'kitchenControllers'
 ,'spicesControllers','brandedFoodControllers','vegetablesControllers','fruitControllers'
-,'frozanControllers','beveragesControllers','bakeryControllers','cartControllers']);
+,'frozanControllers','beveragesControllers','bakeryControllers','cartControllers','authServices']);

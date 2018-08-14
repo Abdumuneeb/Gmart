@@ -1,0 +1,20 @@
+<div class="container-fluid m-0 p-0 row" style="height: auto;  float: left; background-color: white ">
+
+        <form ng-submit="main.doLogin(loginData)" style="margin-left: 20px;">
+            <br>
+            <br> 
+            <br>
+            <strong><labe> User Login</labe></strong> <br><br>
+            <label>User Name: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br> 
+            <input  type="text" value="" ng-model="main.loginData.UserName" placeholder="Enter User Name"> <br> <br>
+            <label>Password: </label> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <br>
+            <input  type="password" value="" ng-model="main.loginData.Password" placeholder="Enter Password">   <br> <br>
+            <input class="btn btn-primary" type="submit" value="Login"> &nbsp; &nbsp; 
+        
+          <div class="success-message" ng-show="main.successMsg"> {{main.successMsg}} </div>
+        <br>
+        <br>
+        <div class="error-message" ng-show="main.errorMsg"> {{main.errorMsg}} </div>            
+        </form>
+        
+        </div>
